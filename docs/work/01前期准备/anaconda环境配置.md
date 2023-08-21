@@ -15,7 +15,7 @@ conda info --envs
 使用以下命令用于切换进入对应的环境（xxxx请替换为需要激活的环境名称，若删去xxxx则进入base环境）
 
 ``` CMD
-conda activate xxxx
+conda activate <虚拟环境名>
 ```
 
 ## 配置镜像源
@@ -30,13 +30,13 @@ conda activate xxxx
 python -m pip install --upgrade pip
 ```
 
-然后进行镜像源的配置
+为了保证在国内网络环境下流畅使用pip进行库管理，需要进行镜像源的配置
 
 ``` CMD
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-https内容即为镜像源地址
+后面的url内容即为镜像源地址
 以下是一些常见的镜像源
 
 ``` CMD
@@ -54,9 +54,11 @@ https内容即为镜像源地址
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 ```
 
-## conda中的pip
+## 在anaconda的虚拟环境中使用pip
 
-在conda中下载pip，以替换所有的pip install 为 conda install，
+由于anaconda默认的conda包管理工具存在一些版本问题，我们也可以为anaconda虚拟环境配置pip进行包管理
+
+使用conda中安装pip，后续即可使用pip install安装所需要的库了
 
 ``` CMD
 conda install pip
