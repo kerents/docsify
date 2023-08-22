@@ -48,8 +48,8 @@ import matplotlib
 ## 配置默认参数和本地文件路径
 
 ```python
-myPath= 'H:\\code\\dash_test\dash_uc\\temp\\myupload' + '\\'
-workspace_dir= 'H:\\code\\dash_test\\dash_uc\\temp\\result'
+myPath= 'H:\\code\\dash_test\dash_uc\\temp\\myupload' + '\\' # 默认上传文件夹
+workspace_dir= 'H:\\code\\dash_test\\dash_uc\\temp\\result' # 默认工作区文件夹
 
 avg_rel_humidity = 30
 cc_weight_albedo = 0.2 
@@ -256,6 +256,7 @@ app.layout = html.Div(
 )
 def update_value(n_clicks, *input_values):
     if n_clicks > 0:
+        # 将变量转换为全局变量
         global avg_rel_humidity, cc_weight_albedo, cc_weight_eti, cc_weight_shade, green_area_cooling_distance, t_air_average_radius , t_ref, uhi_max
         avg_rel_humidity, cc_weight_albedo, cc_weight_eti, cc_weight_shade, green_area_cooling_distance, t_air_average_radius , t_ref, uhi_max = input_values
         return html.H3('参数配置成功')
