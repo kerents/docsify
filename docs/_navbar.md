@@ -1,2 +1,2 @@
-- [主页](/)
+- [主页](https://doc.hsyami.xyz)
 - [视频链接](https://www.bilibili.com)
