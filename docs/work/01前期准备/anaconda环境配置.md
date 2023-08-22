@@ -8,13 +8,13 @@
 
 使用以下命令用于查看conda创建的环境
 
-``` CMD
+``` sh
 conda info --envs
 ```
 
 使用以下命令用于切换进入对应的环境（xxxx请替换为需要激活的环境名称，若删去xxxx则进入base环境）
 
-``` CMD
+``` sh
 conda activate <虚拟环境名>
 ```
 
@@ -26,20 +26,20 @@ conda activate <虚拟环境名>
 
 首先请升级pip为最新版本
 
-``` CMD
+``` sh
 python -m pip install --upgrade pip
 ```
 
 为了保证在国内网络环境下流畅使用pip进行库管理，需要进行镜像源的配置
 
-``` CMD
+``` sh
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 后面的url内容即为镜像源地址
 以下是一些常见的镜像源
 
-``` CMD
+``` sh
 清华：https://pypi.tuna.tsinghua.edu.cn/simple
 阿里云：http://mirrors.aliyun.com/pypi/simple/
 中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
@@ -50,7 +50,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ## 配置conda镜像源
 
-``` CMD
+``` sh
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 ```
 
@@ -60,7 +60,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 
 使用conda中安装pip，后续即可使用pip install安装所需要的库了
 
-``` CMD
+``` sh
 conda install pip
 ```
 
