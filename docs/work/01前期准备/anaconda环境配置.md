@@ -18,11 +18,9 @@ conda info --envs
 conda activate <虚拟环境名>
 ```
 
-## 配置镜像源
+## 配置镜像
 
-在pip和conda中分别配置镜像源，以提升下载体验
-
-## 配置pip镜像源
+在pip和conda中分别配置镜像源，以提升下载体验  
 
 首先请升级pip为最新版本
 
@@ -36,7 +34,8 @@ python -m pip install --upgrade pip
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-后面的url内容即为镜像源地址
+后面的url内容即为镜像源地址  
+
 以下是一些常见的镜像源
 
 ``` sh
@@ -56,7 +55,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 
 ## 在anaconda的虚拟环境中使用pip
 
-由于anaconda默认的conda包管理工具存在一些版本问题，我们也可以为anaconda虚拟环境配置pip进行包管理
+由于anaconda默认的conda包管理工具存在一些版本问题，我们也可以为anaconda虚拟环境配置pip进行包管理  
 
 使用conda中安装pip，后续即可使用pip install安装所需要的库了
 

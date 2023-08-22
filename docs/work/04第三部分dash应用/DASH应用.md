@@ -51,6 +51,7 @@ import matplotlib
 myPath= 'H:\\code\\dash_test\dash_uc\\temp\\myupload' + '\\' # 默认上传文件夹
 workspace_dir= 'H:\\code\\dash_test\\dash_uc\\temp\\result' # 默认工作区文件夹
 
+# 默认参数
 avg_rel_humidity = 30
 cc_weight_albedo = 0.2 
 cc_weight_eti = 0.2
